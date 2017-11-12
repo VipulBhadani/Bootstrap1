@@ -1,0 +1,4 @@
+Download atom from https://atom.io/
+install package emmet
+install package atom-live-server
+install git from https://git-scm.com/downloads
