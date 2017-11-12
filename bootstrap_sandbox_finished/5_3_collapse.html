@@ -5,12 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-
   <title>Bootstrap Sandbox</title>
 </head>
 <body>
   <header>
-    <h1 class="display-3 text-center my-4">Basic Typography</h1>
+    <h1 class="display-3 text-center my-4">Collapse & Accordion</h1>
     <div class="container">
       <div class="row">
         <div class="col-md-3">
@@ -80,68 +79,63 @@
   </header>
 
   <div class="container">
-    <!--########################START HERE#########################-->
+    <!--#####################START HERE###################-->
 
-    <!-- HEADINGS -->
-    <h1 class="h4">Heading One</h1>
-    <h2 class="h5">Heading Two</h2>
-    <h3>Heading Three</h3>
-    <h4>Heading Four</h4>
-    <h5>Heading Five</h5>
-    <h6>Heading Six</h6>
+    <!-- BUTTON WITH COLLAPSE -->
+    <button class="btn btn-primary d-block mb-4" data-toggle="collapse" data-target="#collapse-btn-1">Read More</button>
 
-    <!-- DISPLAY CLASSES -->
-    <h1 class="display-1">Display Heading 1</h1>
-    <h1 class="display-2">Display Heading 2</h1>
-    <h1>Display Heading 3</h1>
-    <h1>Display Heading 4</h1>
+    <div class="collapse mb-5" id="collapse-btn-1">
+      <div class="card">
+        <div class="card-body">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit eius libero quisquam nobis explicabo vel non necessitatibus ipsum doloribus cupiditate voluptate recusandae quo autem error debitis, sed, minima repellendus commodi.
+        </div>
+      </div>
+    </div>
 
-    <!-- PARAGRAPHS -->
-    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore repellendus veniam consequatur vero numquam voluptatem quam ab expedita eum, ipsam? Necessitatibus dicta quaerat, vitae dolorum, dolor autem reiciendis sapiente.</p>
+    <!-- ACCORDION -->
+    <div id="accordion" role="tablist">
+      <div class="card">
+        <div class="card-header" role="tab" id="heading">
+          <h5 class="mb-0"><a href="#collapse1" data-parent="#accordion" data-toggle="collapse">
+            Collapse One
+          </a></h5>
+        </div>
 
-    <!-- LEAD -->
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam dolore repellendus veniam consequatur vero numquam voluptatem quam ab expedita eum, ipsam? Necessitatibus dicta quaerat, vitae dolorum, dolor autem reiciendis sapiente.</p>
+        <div id="collapse1" class="collapse show">
+          <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.
+          </div>
+        </div>
+      </div>
 
-    <!-- STYLE CLASSES -->
-    <p class="font-weight-bold">Bold Text</p>
-    <p>Normal Text</p>
-    <p class="font-italic">Italic Text</p>
+      <div class="card">
+        <div class="card-header" role="tab" id="heading">
+          <h5 class="mb-0"><a href="#collapse2" data-parent="#accordion" data-toggle="collapse">
+            Collapse Two
+          </a></h5>
+        </div>
 
-    <!-- TEXT TRANSFORMS -->
-    <p class="text-lowercase">MAKE LOWERCASE</p>
-    <p class="text-uppercase">make uppercase</p>
-    <p class="text-capitalize">make capitalized</p>
+        <div id="collapse2" class="collapse">
+          <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.
+          </div>
+        </div>
+      </div>
 
-    <!-- BLOCKQUOTES -->
-    <blockquote>
-      <p>This is a blockquote</p>
-    </blockquote>
+      <div class="card">
+        <div class="card-header" role="tab" id="heading">
+          <h5 class="mb-0"><a href="#collapse3" data-parent="#accordion" data-toggle="collapse">
+            Collapse Three
+          </a></h5>
+        </div>
 
-    <!-- BLOCKQUOTE RIGHT ALIGNED -->
-    <blockquote>
-      <p>This is a blockquote aligned right</p>
-    </blockquote>
-
-    <!-- BLOCKQUOTE WITH FOOTER -->
-    <blockquote>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-      <footer>Someone famous in <cite title="Source Title">Source Title</cite></footer>
-    </blockquote>
-
-    <!-- LISTS -->
-    <ul type="I">
-      <li>Lorem ipsum dolor sit amet.</li>
-      <li>Lorem ipsum dolor sit amet.</li>
-      <li>Lorem ipsum dolor sit amet.</li>
-      <li>Lorem ipsum dolor sit amet.</li>
-    </ul>
-
-    <!-- INLINE LIST -->
-    <ul>
-      <li>Lorem ipsum</li>
-      <li>Lorem ipsum </li>
-      <li>Lorem ipsum </li>
-    </ul>
+        <div id="collapse3" class="collapse">
+          <div class="card-body">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis ea iste a doloremque, cumque, debitis eum vel ipsum architecto aut, recusandae totam ullam aperiam. Nesciunt expedita officiis animi quam corporis optio inventore facilis sint et nulla in, repellat debitis dolor at nisi quo, unde temporibus. Quos nisi nostrum officia, illo.
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <div style="margin-top:500px;"></div>
