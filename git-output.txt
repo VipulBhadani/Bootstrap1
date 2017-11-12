@@ -1,0 +1,729 @@
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap
+$ git init
+Initialized empty Git repository in C:/development/Bootstrap/.git/
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        bootstrap-sandbox-starter.zip
+        bootstrap_sandbox_starter/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git cofig
+git: 'cofig' is not a git command. See 'git --help'.
+
+Did you mean this?
+        config
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_rege                                  x]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, com                                  mand line)
+
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git push
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git remote add origin https://github.com/VipulBhadani/Bootstrap.git
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git add *
+warning: LF will be replaced by CRLF in bootstrap_sandbox_starter/2_3_text_alignment_display.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in bootstrap_sandbox_starter/2_5_colors_background.html.
+The file will have its original line endings in your working directory.
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   bootstrap-sandbox-starter.zip
+        new file:   bootstrap_sandbox_starter/2_2_basic_typography.html
+        new file:   bootstrap_sandbox_starter/2_3_text_alignment_display.html
+        new file:   bootstrap_sandbox_starter/2_4_floats_position.html
+        new file:   bootstrap_sandbox_starter/2_5_colors_background.html
+        new file:   bootstrap_sandbox_starter/2_6_spacing.html
+        new file:   bootstrap_sandbox_starter/2_7_sizing.html
+        new file:   bootstrap_sandbox_starter/2_8_breakpoints.html
+        new file:   bootstrap_sandbox_starter/3_10_media_object.html
+        new file:   bootstrap_sandbox_starter/3_2_buttons.html
+        new file:   bootstrap_sandbox_starter/3_3_navbar.html
+        new file:   bootstrap_sandbox_starter/3_4_list_groups_badges.html
+        new file:   bootstrap_sandbox_starter/3_5_forms.html
+        new file:   bootstrap_sandbox_starter/3_6_input_groups.html
+        new file:   bootstrap_sandbox_starter/3_7_alerts_progress.html
+        new file:   bootstrap_sandbox_starter/3_8_tables_pagination.html
+        new file:   bootstrap_sandbox_starter/3_9_cards.html
+        new file:   bootstrap_sandbox_starter/4_2_grid_system.html
+        new file:   bootstrap_sandbox_starter/4_3_grid_alignment.html
+        new file:   bootstrap_sandbox_starter/4_4_flexbox.html
+        new file:   bootstrap_sandbox_starter/4_5_auto_margins_wrapping_order.html
+        new file:   bootstrap_sandbox_starter/5_2_carousel.html
+        new file:   bootstrap_sandbox_starter/5_3_collapse.html
+        new file:   bootstrap_sandbox_starter/5_4_tooltips.html
+        new file:   bootstrap_sandbox_starter/5_5_popovers.html
+        new file:   bootstrap_sandbox_starter/5_6_modals.html
+        new file:   bootstrap_sandbox_starter/README.txt
+        new file:   bootstrap_sandbox_starter/img/image1.jpg
+        new file:   bootstrap_sandbox_starter/img/image2.jpg
+        new file:   bootstrap_sandbox_starter/img/image3.jpg
+        new file:   bootstrap_sandbox_starter/img/image4.jpg
+
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git commit -m "Basic Typography"
+[master (root-commit) be4e11e] Basic Typography
+ 31 files changed, 4502 insertions(+)
+ create mode 100644 bootstrap-sandbox-starter.zip
+ create mode 100644 bootstrap_sandbox_starter/2_2_basic_typography.html
+ create mode 100644 bootstrap_sandbox_starter/2_3_text_alignment_display.html
+ create mode 100644 bootstrap_sandbox_starter/2_4_floats_position.html
+ create mode 100644 bootstrap_sandbox_starter/2_5_colors_background.html
+ create mode 100644 bootstrap_sandbox_starter/2_6_spacing.html
+ create mode 100644 bootstrap_sandbox_starter/2_7_sizing.html
+ create mode 100644 bootstrap_sandbox_starter/2_8_breakpoints.html
+ create mode 100644 bootstrap_sandbox_starter/3_10_media_object.html
+ create mode 100644 bootstrap_sandbox_starter/3_2_buttons.html
+ create mode 100644 bootstrap_sandbox_starter/3_3_navbar.html
+ create mode 100644 bootstrap_sandbox_starter/3_4_list_groups_badges.html
+ create mode 100644 bootstrap_sandbox_starter/3_5_forms.html
+ create mode 100644 bootstrap_sandbox_starter/3_6_input_groups.html
+ create mode 100644 bootstrap_sandbox_starter/3_7_alerts_progress.html
+ create mode 100644 bootstrap_sandbox_starter/3_8_tables_pagination.html
+ create mode 100644 bootstrap_sandbox_starter/3_9_cards.html
+ create mode 100644 bootstrap_sandbox_starter/4_2_grid_system.html
+ create mode 100644 bootstrap_sandbox_starter/4_3_grid_alignment.html
+ create mode 100644 bootstrap_sandbox_starter/4_4_flexbox.html
+ create mode 100644 bootstrap_sandbox_starter/4_5_auto_margins_wrapping_order.html
+ create mode 100644 bootstrap_sandbox_starter/5_2_carousel.html
+ create mode 100644 bootstrap_sandbox_starter/5_3_collapse.html
+ create mode 100644 bootstrap_sandbox_starter/5_4_tooltips.html
+ create mode 100644 bootstrap_sandbox_starter/5_5_popovers.html
+ create mode 100644 bootstrap_sandbox_starter/5_6_modals.html
+ create mode 100644 bootstrap_sandbox_starter/README.txt
+ create mode 100644 bootstrap_sandbox_starter/img/image1.jpg
+ create mode 100644 bootstrap_sandbox_starter/img/image2.jpg
+ create mode 100644 bootstrap_sandbox_starter/img/image3.jpg
+ create mode 100644 bootstrap_sandbox_starter/img/image4.jpg
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git push origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git push --set-upstream origin master
+Username for 'https://github.com': vips.twish2@gmail.com
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/VipulBhadani/Bootstrap.git/'
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git config user.name "vips.twish2@gmail.com"
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git push origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git push --set-upstream origin master
+Username for 'https://github.com': vips.twish2@gmail.com
+To https://github.com/VipulBhadani/Bootstrap.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/VipulBhadani/Bootstrap.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git push origin
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git push --set-upstream origin master
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/VipulBhadani/Bootstrap.git/'
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git pull origin
+remote: Counting objects: 3, done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+warning: no common commits
+Unpacking objects: 100% (3/3), done.
+From https://github.com/VipulBhadani/Bootstrap
+ * [new branch]      master     -> origin/master
+You asked to pull from the remote 'origin', but did not specify
+a branch. Because this is not the default configured remote
+for your current branch, you must specify a branch on the command line.
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git pull origin master
+From https://github.com/VipulBhadani/Bootstrap
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git pull origin master
+From https://github.com/VipulBhadani/Bootstrap
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git fetch origin master
+From https://github.com/VipulBhadani/Bootstrap
+ * branch            master     -> FETCH_HEAD
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git push --set-upstream origin master
+Username for 'https://github.com': vips.twish2@gmail.com
+To https://github.com/VipulBhadani/Bootstrap.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/VipulBhadani/Bootstrap.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git push --help
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git config --get-all
+error: wrong number of arguments
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git config --add user.name vips.twish2@gmail.com
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git config --get-all
+error: wrong number of arguments
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git config
+usage: git config [<options>]
+
+Config file location
+    --global              use global config file
+    --system              use system config file
+    --local               use repository config file
+    -f, --file <file>     use given config file
+    --blob <blob-id>      read config from given blob object
+
+Action
+    --get                 get value: name [value-regex]
+    --get-all             get all values: key [value-regex]
+    --get-regexp          get values for regexp: name-regex [value-regex]
+    --get-urlmatch        get value specific for the URL: section[.var] URL
+    --replace-all         replace all matching variables: name value [value_regex]
+    --add                 add a new variable: name value
+    --unset               remove a variable: name [value-regex]
+    --unset-all           remove all matches: name [value-regex]
+    --rename-section      rename section: old-name new-name
+    --remove-section      remove a section: name
+    -l, --list            list all
+    -e, --edit            open an editor
+    --get-color           find the color configured: slot [default]
+    --get-colorbool       find the color setting: slot [stdout-is-tty]
+
+Type
+    --bool                value is "true" or "false"
+    --int                 value is decimal number
+    --bool-or-int         value is --bool or --int
+    --path                value is a path (file or directory name)
+
+Other
+    -z, --null            terminate values with NUL byte
+    --name-only           show variable names only
+    --includes            respect include directives on lookup
+    --show-origin         show origin of config (file, standard input, blob, command line)
+
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git config --local --add user.name 'vips.twish2@gmail.com'
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git push --set-upstream origin master
+Username for 'https://github.com': vips.twish2@Gmail.com
+To https://github.com/VipulBhadani/Bootstrap.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/VipulBhadani/Bootstrap.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git push --set-upstream origin master -fast-forward
+error: unknown switch `a'
+usage: git push [<options>] [<repository> [<refspec>...]]
+
+    -v, --verbose         be more verbose
+    -q, --quiet           be more quiet
+    --repo <repository>   repository
+    --all                 push all refs
+    --mirror              mirror all refs
+    -d, --delete          delete refs
+    --tags                push tags (can't be used with --all or --mirror)
+    -n, --dry-run         dry run
+    --porcelain           machine-readable output
+    -f, --force           force updates
+    --force-with-lease[=<refname>:<expect>]
+                          require old value of ref to be at this value
+    --recurse-submodules[=<check|on-demand|no>]
+                          control recursive pushing of submodules
+    --thin                use thin pack
+    --receive-pack <receive-pack>
+                          receive pack program
+    --exec <receive-pack>
+                          receive pack program
+    -u, --set-upstream    set upstream for git pull/status
+    --progress            force progress reporting
+    --prune               prune locally removed refs
+    --no-verify           bypass pre-push hook
+    --follow-tags         push missing but relevant tags
+    --signed[=<yes|no|if-asked>]
+                          GPG sign the push
+    --atomic              request atomic transaction on remote side
+    -o, --push-option <server-specific>
+                          option to transmit
+    -4, --ipv4            use IPv4 addresses only
+    -6, --ipv6            use IPv6 addresses only
+
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git remote add origin https://github.com/VipulBhadani/Bootstrap.git
+fatal: remote origin already exists.
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git push -u origin master
+Username for 'https://github.com': vips.twish2@gmail.com
+To https://github.com/VipulBhadani/Bootstrap.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/VipulBhadani/Bootstrap.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git pull origin master
+From https://github.com/VipulBhadani/Bootstrap
+ * branch            master     -> FETCH_HEAD
+fatal: refusing to merge unrelated histories
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git merge
+fatal: No remote for the current branch.
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git remote add origin https://github.com/VipulBhadani/Bootstrap1.git
+fatal: remote origin already exists.
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git remote remove origin
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git remote add origin https://github.com/VipulBhadani/Bootstrap1.git
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git push -u origin master
+Username for 'https://github.com': vips.twish2@gmail.com
+Counting objects: 35, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (35/35), done.
+Writing objects: 100% (35/35), 156.02 KiB | 0 bytes/s, done.
+Total 35 (delta 25), reused 0 (delta 0)
+remote: Resolving deltas: 100% (25/25), done.
+Branch master set up to track remote branch master from origin.
+To https://github.com/VipulBhadani/Bootstrap1.git
+ * [new branch]      master -> master
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   bootstrap_sandbox_starter/2_2_basic_typography.html
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        bootstrap-sandbox-finished.zip
+        bootstrap_sandbox_finished/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git add *
+warning: LF will be replaced by CRLF in bootstrap_sandbox_finished/2_3_text_alignment_display.html.
+The file will have its original line endings in your working directory.
+warning: LF will be replaced by CRLF in bootstrap_sandbox_finished/2_5_colors_background.html.
+The file will have its original line endings in your working directory.
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   bootstrap-sandbox-finished.zip
+        new file:   bootstrap_sandbox_finished/2_2_basic_typography.html
+        new file:   bootstrap_sandbox_finished/2_3_text_alignment_display.html
+        new file:   bootstrap_sandbox_finished/2_4_floats_position.html
+        new file:   bootstrap_sandbox_finished/2_5_colors_background.html
+        new file:   bootstrap_sandbox_finished/2_6_spacing.html
+        new file:   bootstrap_sandbox_finished/2_7_sizing.html
+        new file:   bootstrap_sandbox_finished/2_8_breakpoints.html
+        new file:   bootstrap_sandbox_finished/3_10_media_object.html
+        new file:   bootstrap_sandbox_finished/3_2_buttons.html
+        new file:   bootstrap_sandbox_finished/3_3_navbar.html
+        new file:   bootstrap_sandbox_finished/3_4_list_groups_badges.html
+        new file:   bootstrap_sandbox_finished/3_5_forms.html
+        new file:   bootstrap_sandbox_finished/3_6_input_groups.html
+        new file:   bootstrap_sandbox_finished/3_7_alerts_progress.html
+        new file:   bootstrap_sandbox_finished/3_8_tables_pagination.html
+        new file:   bootstrap_sandbox_finished/3_9_cards.html
+        new file:   bootstrap_sandbox_finished/4_2_grid_system.html
+        new file:   bootstrap_sandbox_finished/4_3_grid_alignment.html
+        new file:   bootstrap_sandbox_finished/4_4_flexbox.html
+        new file:   bootstrap_sandbox_finished/4_5_auto_margins_wrapping_order.html
+        new file:   bootstrap_sandbox_finished/5_2_carousel.html
+        new file:   bootstrap_sandbox_finished/5_3_collapse.html
+        new file:   bootstrap_sandbox_finished/5_4_tooltips.html
+        new file:   bootstrap_sandbox_finished/5_5_popovers.html
+        new file:   bootstrap_sandbox_finished/5_6_modals.html
+        new file:   bootstrap_sandbox_finished/README.txt
+        new file:   bootstrap_sandbox_finished/img/image1.jpg
+        new file:   bootstrap_sandbox_finished/img/image2.jpg
+        new file:   bootstrap_sandbox_finished/img/image3.jpg
+        new file:   bootstrap_sandbox_finished/img/image4.jpg
+        modified:   bootstrap_sandbox_starter/2_2_basic_typography.html
+
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git commit -m 'Capitalized'
+[master 20dadde] Capitalized
+ 32 files changed, 4960 insertions(+), 3 deletions(-)
+ create mode 100644 bootstrap-sandbox-finished.zip
+ create mode 100644 bootstrap_sandbox_finished/2_2_basic_typography.html
+ create mode 100644 bootstrap_sandbox_finished/2_3_text_alignment_display.html
+ create mode 100644 bootstrap_sandbox_finished/2_4_floats_position.html
+ create mode 100644 bootstrap_sandbox_finished/2_5_colors_background.html
+ create mode 100644 bootstrap_sandbox_finished/2_6_spacing.html
+ create mode 100644 bootstrap_sandbox_finished/2_7_sizing.html
+ create mode 100644 bootstrap_sandbox_finished/2_8_breakpoints.html
+ create mode 100644 bootstrap_sandbox_finished/3_10_media_object.html
+ create mode 100644 bootstrap_sandbox_finished/3_2_buttons.html
+ create mode 100644 bootstrap_sandbox_finished/3_3_navbar.html
+ create mode 100644 bootstrap_sandbox_finished/3_4_list_groups_badges.html
+ create mode 100644 bootstrap_sandbox_finished/3_5_forms.html
+ create mode 100644 bootstrap_sandbox_finished/3_6_input_groups.html
+ create mode 100644 bootstrap_sandbox_finished/3_7_alerts_progress.html
+ create mode 100644 bootstrap_sandbox_finished/3_8_tables_pagination.html
+ create mode 100644 bootstrap_sandbox_finished/3_9_cards.html
+ create mode 100644 bootstrap_sandbox_finished/4_2_grid_system.html
+ create mode 100644 bootstrap_sandbox_finished/4_3_grid_alignment.html
+ create mode 100644 bootstrap_sandbox_finished/4_4_flexbox.html
+ create mode 100644 bootstrap_sandbox_finished/4_5_auto_margins_wrapping_order.html
+ create mode 100644 bootstrap_sandbox_finished/5_2_carousel.html
+ create mode 100644 bootstrap_sandbox_finished/5_3_collapse.html
+ create mode 100644 bootstrap_sandbox_finished/5_4_tooltips.html
+ create mode 100644 bootstrap_sandbox_finished/5_5_popovers.html
+ create mode 100644 bootstrap_sandbox_finished/5_6_modals.html
+ create mode 100644 bootstrap_sandbox_finished/README.txt
+ create mode 100644 bootstrap_sandbox_finished/img/image1.jpg
+ create mode 100644 bootstrap_sandbox_finished/img/image2.jpg
+ create mode 100644 bootstrap_sandbox_finished/img/image3.jpg
+ create mode 100644 bootstrap_sandbox_finished/img/image4.jpg
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git push -u origin master
+Username for 'https://github.com': vips.twish2@gmail.com
+Counting objects: 31, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (31/31), done.
+Writing objects: 100% (31/31), 131.84 KiB | 0 bytes/s, done.
+Total 31 (delta 25), reused 0 (delta 0)
+remote: Resolving deltas: 100% (25/25), completed with 1 local object.
+Branch master set up to track remote branch master from origin.
+To https://github.com/VipulBhadani/Bootstrap1.git
+   be4e11e..20dadde  master -> master
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   bootstrap_sandbox_starter/2_2_basic_typography.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git add *
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   bootstrap_sandbox_starter/2_2_basic_typography.html
+
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git commit -m 'list-unstyled practised'
+[master ea51700] list-unstyled practised
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git push origin
+Username for 'https://github.com': vips.twis2@gmail.com
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/VipulBhadani/Bootstrap1.git/'
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git push origin
+Username for 'https://github.com': vips.twish2@gmail.com
+Counting objects: 4, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 399 bytes | 0 bytes/s, done.
+Total 4 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), completed with 3 local objects.
+To https://github.com/VipulBhadani/Bootstrap1.git
+   20dadde..ea51700  master -> master
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        SystemRequirement.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git add *
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git commit -m 'Added system requirement'
+[master d116d1d] Added system requirement
+ 1 file changed, 4 insertions(+)
+ create mode 100644 SystemRequirement.txt
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
+$ git push -u origin master
+Username for 'https://github.com': vips.twish2@gmial.com
+remote: Invalid username or password.
+fatal: Authentication failed for 'https://github.com/VipulBhadani/Bootstrap1.git/'
+
+E7440@E7440-PC MINGW64 /c/development/Bootstrap (master)
